@@ -1,0 +1,28 @@
+
+/**
+ * Write a description of class Romans here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class KsiazkaFantastyczna extends Ksiazka
+{
+    String bohater;
+    String swiat;
+    String elementyFantastyczne;
+    public KsiazkaFantastyczna(String tytul,String bohater,String swiat,String elementyFantastyczne)
+    {
+        super(tytul);
+        this.bohater=bohater;this.swiat=swiat;this.elementyFantastyczne=elementyFantastyczne;
+      
+    }
+    public String dajOpis()
+    {
+        return ("Akcja ksiazki rozgrywa sie w "+swiat+" , swiecie rozniacym sie od naszego miedzy innymi o pare elementow fantastycznych: "+elementyFantastyczne+" Bohaterem powieści jest "+bohater+" .") ;
+    }
+    public  String dajRodzaj()
+    {
+        return "Ksiazka Fantastyczna";
+    }
+   
+}
